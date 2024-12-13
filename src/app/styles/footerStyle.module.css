@@ -1,0 +1,39 @@
+.principalFooter {
+    background-color: rgba(23, 23, 23, 1);
+    position: relative;
+
+    border-top: 5px rgba(23, 23, 23, 1);
+
+}
+
+.content {
+    background-color: rgba(23, 23, 23, 1);
+}
+
+
+.sectionTwoFooter {
+    background-color: rgba(23, 23, 23, 1);
+
+}
+
+.sectionBannerFooter {
+    position: relative;
+    width: 100%;
+    /* height: 50vh; */
+
+
+}
+
+.sectionBannerFooter::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-image: url('/images/transitionImg.png');
+    background-size: cover;
+    z-index: -1;
+
+
+}

@@ -1,0 +1,6 @@
+export * from './Beneficios'
+export * from './Empresa'
+export * from './Contacto'
+export * from './MobileCarousel'
+export * from './ProductCard'
+export * from './Hero'

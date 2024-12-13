@@ -1,0 +1,63 @@
+.homePage {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.homePage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url('/images/manchas.png');
+    background-size: contain;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.homePage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 0;
+    /* Asegúrate de que esté por encima del pseudo-elemento ::before pero debajo de otros contenidos */
+    pointer-events: none;
+    /* Para que no interfiera con otros elementos interactivos */
+}
+
+/* Asegúrate de que los elementos dentro de .homePage estén en un nivel superior */
+.homePage>* {
+    position: relative;
+    z-index: 1;
+}
+
+
+.triangleButton {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-right: 55px solid rgba(23, 23, 23, 1);
+    border-top: 55px solid transparent;
+    border-left: 55px solid transparent;
+    border-bottom: 55px solid rgba(23, 23, 23, 1);
+    font-size: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 99;
+   
+}
+
+
+

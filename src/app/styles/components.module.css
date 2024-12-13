@@ -1,0 +1,14 @@
+/* /CSS SPECIFICO PARA BOTONES CARDS Y DETALLES/ */
+
+.bttnStyle {
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+
+}
+
+/* /SISTEMAS / */
+
+.cardsSection {
+    background-color: rgba(23, 23, 23, 1);
+}
